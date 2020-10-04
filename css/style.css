@@ -100,8 +100,7 @@ body {
 }
 .headerlogo {
 	display: inline-block;
-	margin: 0px 124px 0px 0px;
-	/* max-height: 50px; */
+	margin: 0px 120px 0px 0px;
 	max-width: 140px;
 	vertical-align: middle;
 }
