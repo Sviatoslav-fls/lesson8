@@ -131,16 +131,10 @@ body {
 	color: #70c851;
 }
 .headerlink:active {
-	/* border-bottom: none; */
-	/* border-top: 1px solid #048b0b; */
 	background-color: rgba(4, 139, 11, 0.192);
 	color: #048b0b;
 }
 .headerlink:focus {
-	/* border-bottom: none;
-	border-top: 1px solid #048b0b;
-	color: #048b0b; */
-	/* outline: 2px solid red; */
 	outline: 2px solid rgba(4, 139, 11, 0.192);
 }
 
@@ -152,13 +146,8 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 	border-radius: 3px;
-	/* background-clip: border-box; */
 	background: linear-gradient(360deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 51.04%), #70c851;
 	padding: 0px 15px 0px 30px;
-	/* border-radius: 3px; */
-	/* background-color: #70c851; */
-	/* background-image: linear-gradient(NaNdeg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 51%); */
-	/* vertical-align: center; */
 	border: 2px solid transparent;
 }
 .headerbtn::after {
@@ -170,6 +159,12 @@ body {
 }
 .headerbtn span {
 	margin: 0px 18px 0px 0px;
+}
+.headerbtn:hover {
+	box-shadow: -2px 2px 10px 2px #70c851, inset 0px 0px 7px 2px #f4faf2;
+}
+.headerbtn:active {
+	box-shadow: inset 0px 0px 7px 2px #f4faf2;
 }
 .home {
 }
@@ -197,12 +192,21 @@ body {
 	font-family: Poppins;
 	font-size: 16px;
 	font-weight: 500;
-	/* filter: drop-shadow(0px 1px 20px rgba(121, 193, 95, 0.45)); */
 	border-radius: 3px;
 	background-color: #70c851;
 	display: inline-block;
 	padding: 0px 43px;
 	line-height: 50px;
+}
+.topbtn:hover {
+	box-shadow: inset 0px 0px 10px 3px #70c851;
+	background-color: #fff;
+	color: #70c851;
+}
+.topbtn:active {
+	box-shadow: inset 0px 0px 20px 5px #70c851;
+	background-color: #fff;
+	color: #70c851;
 }
 .homebottom {
 	padding: 60px 0px 60px 0px;
@@ -231,6 +235,17 @@ body {
 .bottomlist li {
 	margin: 0px 0px 40px 0px;
 }
+.bottomlist li a:hover {
+	text-shadow: 1px -1px 5px #70c851;
+}
+.bottomlist li a:hover::before {
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	box-shadow: -1px 1px 3px 1px #154b01;
+	margin: 0px 19px 0px 0px;
+}
 
 .bottomlist li:last-child {
 	margin: 0px 0px 0px 0px;
@@ -241,7 +256,7 @@ body {
 	font-size: 18px;
 	font-weight: 500;
 }
-.bottomlink::before {
+.bottomlist li a::before {
 	content: "";
 	display: inline-block;
 	width: 11px;
@@ -315,6 +330,7 @@ body {
 }
 .blogbodybottom a:hover {
 	text-decoration: underline;
+	color: rgb(31, 31, 226);
 }
 .blogbodybottom li {
 	display: inline-block;
@@ -374,6 +390,9 @@ body {
 .contactslist {
 	font-size: 16px;
 	max-width: 330px;
+}
+.contactslist li:hover {
+	text-decoration: underline;
 }
 .contactslist a {
 	color: #000000;
@@ -500,6 +519,9 @@ span.price {
 	padding: 0px 52px;
 	line-height: 50px;
 }
+.blockleftbtn:hover {
+	box-shadow: inset 0px 0px 10px 3px rgba(229, 232, 236, 0.8);
+}
 .blockright {
 	display: inline-block;
 	max-width: 480px;
@@ -508,7 +530,6 @@ span.price {
 }
 .certificationtitle {
 	font-family: Gilroy;
-
 	font-size: 40px;
 	font-weight: 800;
 	margin: 0px 0px 30px 0px;
@@ -528,16 +549,16 @@ span.price {
 .blockimage img {
 	width: 100%;
 }
-.certificationbody p {
+.certificationbody {
 	font-family: Gilroy;
 	color: #333333;
+}
+.certificationbody p {
 	font-size: 18px;
 	line-height: 24px;
 	margin: 0px 0px 35px 0px;
 }
 .certificationbody h2 {
-	font-family: Gilroy;
-	color: #333333;
 	font-size: 24px;
 	font-weight: 700;
 	margin: 0px 0px 20px 0px;
@@ -547,17 +568,15 @@ span.price {
 	margin: 0px 0px 25px 0px;
 }
 .certitems {
-}
-.itemstitle {
 	font-family: Gilroy;
 	color: #333333;
+}
+.itemstitle {
 	font-size: 19px;
 	font-weight: 700;
 	margin: 0px 0px 20px 0px;
 }
 .certlist li {
-	font-family: Gilroy;
-	color: #333333;
 	font-size: 18px;
 	margin: 0px 0px 15px 0px;
 }
@@ -569,13 +588,4 @@ span.price {
 	background-color: #87b0ee;
 	border-radius: 50%;
 	margin: 0px 14px 2px 50px;
-}
-.itemring {
-	display: inline-block;
-	border: 1px solid #87b0ee;
-	box-shadow: inset 0 9px #87b0ee;
-	border-radius: 50%;
-	width: 9px;
-	height: 9px;
-	margin: 0px 14px 0px 50px;
 }
